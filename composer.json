@@ -1,5 +1,5 @@
 {
-    "name": "michaelquattrochi/forgely-video-parser",
+    "name": "coalmarch/forgely-video-parser",
     "description": "Forgely Video Parser",
     "require-dev": {
         "phpunit/phpunit": "^4.8",
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MichaelQuattrochi\\": "src/"
+            "Coalmarch\\": "src/"
         }
     }
 }
