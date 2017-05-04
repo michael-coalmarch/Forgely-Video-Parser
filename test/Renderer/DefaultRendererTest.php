@@ -6,11 +6,11 @@
  * Time: 18:45
  */
 
-namespace RicardoFiorani\Test\Renderer;
+namespace MichaelQuattrochi\Test\Renderer;
 
 
 use PHPUnit_Framework_TestCase;
-use RicardoFiorani\Renderer\DefaultRenderer;
+use MichaelQuattrochi\Renderer\DefaultRenderer;
 
 class DefaultRendererTest extends PHPUnit_Framework_TestCase
 {

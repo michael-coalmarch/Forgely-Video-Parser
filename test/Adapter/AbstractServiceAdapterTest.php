@@ -6,13 +6,13 @@
  * Time: 18:55
  */
 
-namespace RicardoFiorani\Test\Adapter;
+namespace MichaelQuattrochi\Test\Adapter;
 
 use PHPUnit_Framework_TestCase;
-use RicardoFiorani\Adapter\Facebook\FacebookServiceAdapter;
-use RicardoFiorani\Exception\ServiceNotAvailableException;
-use RicardoFiorani\Matcher\VideoServiceMatcher;
-use RicardoFiorani\Renderer\DefaultRenderer;
+use MichaelQuattrochi\Adapter\Facebook\FacebookServiceAdapter;
+use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use MichaelQuattrochi\Matcher\VideoServiceMatcher;
+use MichaelQuattrochi\Renderer\DefaultRenderer;
 
 class AbstractServiceAdapterTest extends PHPUnit_Framework_TestCase
 {
