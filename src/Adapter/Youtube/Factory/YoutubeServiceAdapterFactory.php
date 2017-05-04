@@ -5,11 +5,11 @@
  * Date: 29/08/2015
  * Time: 19:24.
  */
-namespace MichaelQuattrochi\Adapter\Youtube\Factory;
+namespace Coalmarch\Adapter\Youtube\Factory;
 
-use MichaelQuattrochi\Adapter\CallableServiceAdapterFactoryInterface;
-use MichaelQuattrochi\Adapter\Youtube\YoutubeServiceAdapter;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\CallableServiceAdapterFactoryInterface;
+use Coalmarch\Adapter\Youtube\YoutubeServiceAdapter;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class YoutubeServiceAdapterFactory implements CallableServiceAdapterFactoryInterface
 {

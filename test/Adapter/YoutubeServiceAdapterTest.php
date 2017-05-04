@@ -6,13 +6,13 @@
  * Time: 16:10
  */
 
-namespace MichaelQuattrochi\Test\Adapter;
+namespace Coalmarch\Test\Adapter;
 
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Adapter\Youtube\YoutubeServiceAdapter;
-use MichaelQuattrochi\Matcher\VideoServiceMatcher;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use Coalmarch\Adapter\Youtube\YoutubeServiceAdapter;
+use Coalmarch\Matcher\VideoServiceMatcher;
+use Coalmarch\Exception\ServiceNotAvailableException;
 
 class YoutubeServiceAdapterTest extends PHPUnit_Framework_TestCase
 {
@@ -67,7 +67,7 @@ class YoutubeServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testThrowsExceptionOnRequestThumbnailWithAnInvalidSize($url)
     {
         $youtubeVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\InvalidThumbnailSizeException');
+        $this->setExpectedException('\\Coalmarch\\Exception\\InvalidThumbnailSizeException');
         $youtubeVideo->getThumbnail('This Size does not exists :)');
     }
 

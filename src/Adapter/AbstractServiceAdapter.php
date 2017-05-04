@@ -5,10 +5,10 @@
  * Date: 29/08/2015
  * Time: 19:37.
  */
-namespace MichaelQuattrochi\Adapter;
+namespace Coalmarch\Adapter;
 
-use MichaelQuattrochi\Exception\NotEmbeddableException;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Exception\NotEmbeddableException;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 abstract class AbstractServiceAdapter implements VideoAdapterInterface
 {

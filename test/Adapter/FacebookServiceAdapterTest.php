@@ -6,12 +6,12 @@
  * Time: 15:47
  */
 
-namespace MichaelQuattrochi\Test\Adapter;
+namespace Coalmarch\Test\Adapter;
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Adapter\Facebook\FacebookServiceAdapter;
-use MichaelQuattrochi\Matcher\VideoServiceMatcher;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use Coalmarch\Adapter\Facebook\FacebookServiceAdapter;
+use Coalmarch\Matcher\VideoServiceMatcher;
+use Coalmarch\Exception\ServiceNotAvailableException;
 
 class FacebookServiceAdapterTest extends PHPUnit_Framework_TestCase
 {
@@ -67,7 +67,7 @@ class FacebookServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testThrowsExceptionOnRequestThumbnailWithAnInvalidSize($url)
     {
         $facebookVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\InvalidThumbnailSizeException');
+        $this->setExpectedException('\\Coalmarch\\Exception\\InvalidThumbnailSizeException');
         $facebookVideo->getThumbnail('This Size does not exists :)');
     }
 
@@ -78,7 +78,7 @@ class FacebookServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testGetSmallThumbnailThrowsException($url)
     {
         $facebookVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\ThumbnailSizeNotAvailable');
+        $this->setExpectedException('\\Coalmarch\\Exception\\ThumbnailSizeNotAvailable');
         $facebookVideo->getSmallThumbnail();
     }
 
@@ -89,7 +89,7 @@ class FacebookServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testGetLargeThumbnailThrowsException($url)
     {
         $facebookVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\ThumbnailSizeNotAvailable');
+        $this->setExpectedException('\\Coalmarch\\Exception\\ThumbnailSizeNotAvailable');
         $facebookVideo->getLargeThumbnail();
     }
 

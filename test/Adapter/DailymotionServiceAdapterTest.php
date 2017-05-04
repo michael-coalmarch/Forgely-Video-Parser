@@ -6,12 +6,12 @@
  * Time: 23:55
  */
 
-namespace MichaelQuattrochi\Test\Adapter;
+namespace Coalmarch\Test\Adapter;
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Adapter\Dailymotion\DailymotionServiceAdapter;
-use MichaelQuattrochi\Matcher\VideoServiceMatcher;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use Coalmarch\Adapter\Dailymotion\DailymotionServiceAdapter;
+use Coalmarch\Matcher\VideoServiceMatcher;
+use Coalmarch\Exception\ServiceNotAvailableException;
 
 
 class DailymotionServiceAdapterTest extends PHPUnit_Framework_TestCase
@@ -69,7 +69,7 @@ class DailymotionServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testThrowsExceptionOnRequestThumbnailWithAnInvalidSize($url)
     {
         $dailymotionVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\InvalidThumbnailSizeException');
+        $this->setExpectedException('\\Coalmarch\\Exception\\InvalidThumbnailSizeException');
         $dailymotionVideo->getThumbnail('This Size does not exists :)');
     }
 

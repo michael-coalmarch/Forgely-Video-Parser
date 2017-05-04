@@ -1,11 +1,11 @@
 <?php
 
-namespace MichaelQuattrochi\Matcher;
+namespace Coalmarch\Matcher;
 
-use MichaelQuattrochi\Adapter\VideoAdapterInterface;
-use MichaelQuattrochi\Container\Factory\ServicesContainerFactory;
-use MichaelQuattrochi\Container\ServicesContainer;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use Coalmarch\Adapter\VideoAdapterInterface;
+use Coalmarch\Container\Factory\ServicesContainerFactory;
+use Coalmarch\Container\ServicesContainer;
+use Coalmarch\Exception\ServiceNotAvailableException;
 
 /**
  * @author Ricardo Fiorani

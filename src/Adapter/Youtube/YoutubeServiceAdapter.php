@@ -5,11 +5,11 @@
  * Date: 29/08/2015
  * Time: 14:53.
  */
-namespace MichaelQuattrochi\Adapter\Youtube;
+namespace Coalmarch\Adapter\Youtube;
 
-use MichaelQuattrochi\Adapter\AbstractServiceAdapter;
-use MichaelQuattrochi\Exception\InvalidThumbnailSizeException;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\AbstractServiceAdapter;
+use Coalmarch\Exception\InvalidThumbnailSizeException;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class YoutubeServiceAdapter extends AbstractServiceAdapter
 {

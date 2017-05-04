@@ -6,11 +6,11 @@
  * Time: 19:58
  */
 
-namespace MichaelQuattrochi\Test\Container;
+namespace Coalmarch\Test\Container;
 
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Container\ServicesContainer;
+use Coalmarch\Container\ServicesContainer;
 use stdClass;
 
 class ServicesContainerTest extends PHPUnit_Framework_TestCase
@@ -20,7 +20,7 @@ class ServicesContainerTest extends PHPUnit_Framework_TestCase
         $config = $this->getMockConfig();
         $serviceContainer = $this->createServiceContainer($config);
         $this->assertTrue($serviceContainer->hasService('Youtube'));
-        $this->assertInstanceOf('\\MichaelQuattrochi\\Renderer\\DefaultRenderer', $serviceContainer->getRenderer());
+        $this->assertInstanceOf('\\Coalmarch\\Renderer\\DefaultRenderer', $serviceContainer->getRenderer());
     }
 
     public function testServiceContainerServiceRegistrationByInjection()
@@ -31,7 +31,7 @@ class ServicesContainerTest extends PHPUnit_Framework_TestCase
         });
 
         $this->assertContains('TestService', $serviceContainer->getServiceNameList());
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\DuplicatedServiceNameException');
+        $this->setExpectedException('\\Coalmarch\\Exception\\DuplicatedServiceNameException');
         $serviceContainer->registerService('TestService', array('#testPattern#'), function () {
         });
     }
@@ -48,7 +48,7 @@ class ServicesContainerTest extends PHPUnit_Framework_TestCase
         $config = $this->getMockConfig();
         $serviceContainer = $this->createServiceContainer($config);
         $factory = $serviceContainer->getFactory('Youtube');
-        $this->assertInstanceOf('\\MichaelQuattrochi\\Adapter\\Youtube\\Factory\\YoutubeServiceAdapterFactory',$factory);
+        $this->assertInstanceOf('\\Coalmarch\\Adapter\\Youtube\\Factory\\YoutubeServiceAdapterFactory',$factory);
 
         $alreadyInstantiatedFactory = $serviceContainer->getFactory('Youtube');
         $this->assertEquals($factory,$alreadyInstantiatedFactory);
@@ -76,12 +76,12 @@ class ServicesContainerTest extends PHPUnit_Framework_TestCase
                         '#(?:<\>]+href=\")?(?:http://)?((?:[a-zA-Z]{1,4}\.)?youtube.com/(?:watch)?\?v=(.{11}?))[^"]*(?:\"[^\<\>]*>)?([^\<\>]*)(?:)?#',
                         '%(?:youtube\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i',
                     ),
-                    'factory' => '\\MichaelQuattrochi\\Adapter\\Youtube\\Factory\\YoutubeServiceAdapterFactory',
+                    'factory' => '\\Coalmarch\\Adapter\\Youtube\\Factory\\YoutubeServiceAdapterFactory',
                 ),
             ),
             'renderer' => array(
                 'name' => 'DefaultRenderer',
-                'factory' => '\\MichaelQuattrochi\\Renderer\\Factory\\DefaultRendererFactory',
+                'factory' => '\\Coalmarch\\Renderer\\Factory\\DefaultRendererFactory',
             )
         );
     }

@@ -6,11 +6,11 @@
  * Time: 18:45
  */
 
-namespace MichaelQuattrochi\Test\Renderer;
+namespace Coalmarch\Test\Renderer;
 
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Renderer\DefaultRenderer;
+use Coalmarch\Renderer\DefaultRenderer;
 
 class DefaultRendererTest extends PHPUnit_Framework_TestCase
 {

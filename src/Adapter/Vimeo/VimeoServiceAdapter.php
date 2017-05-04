@@ -5,12 +5,12 @@
  * Date: 29/08/2015
  * Time: 14:56.
  */
-namespace MichaelQuattrochi\Adapter\Vimeo;
+namespace Coalmarch\Adapter\Vimeo;
 
-use MichaelQuattrochi\Adapter\AbstractServiceAdapter;
-use MichaelQuattrochi\Exception\InvalidThumbnailSizeException;
-use MichaelQuattrochi\Exception\ServiceApiNotAvailable;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\AbstractServiceAdapter;
+use Coalmarch\Exception\InvalidThumbnailSizeException;
+use Coalmarch\Exception\ServiceApiNotAvailable;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class VimeoServiceAdapter extends AbstractServiceAdapter
 {

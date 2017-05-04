@@ -5,11 +5,11 @@
  * Date: 29/08/2015
  * Time: 14:56.
  */
-namespace MichaelQuattrochi\Adapter\Vimeo\Factory;
+namespace Coalmarch\Adapter\Vimeo\Factory;
 
-use MichaelQuattrochi\Adapter\CallableServiceAdapterFactoryInterface;
-use MichaelQuattrochi\Adapter\Vimeo\VimeoServiceAdapter;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\CallableServiceAdapterFactoryInterface;
+use Coalmarch\Adapter\Vimeo\VimeoServiceAdapter;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class VimeoServiceAdapterFactory implements CallableServiceAdapterFactoryInterface
 {

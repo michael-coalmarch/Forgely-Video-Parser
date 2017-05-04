@@ -5,10 +5,10 @@
  * Date: 30/08/2015
  * Time: 01:05.
  */
-namespace MichaelQuattrochi\Renderer\Factory;
+namespace Coalmarch\Renderer\Factory;
 
-use MichaelQuattrochi\Renderer\DefaultRenderer;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Renderer\DefaultRenderer;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class DefaultRendererFactory implements RendererFactoryInterface
 {

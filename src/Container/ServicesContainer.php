@@ -5,11 +5,11 @@
  * Date: 31/08/2015
  * Time: 21:06.
  */
-namespace MichaelQuattrochi\Container;
+namespace Coalmarch\Container;
 
-use MichaelQuattrochi\Adapter\CallableServiceAdapterFactoryInterface;
-use MichaelQuattrochi\Exception\DuplicatedServiceNameException;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\CallableServiceAdapterFactoryInterface;
+use Coalmarch\Exception\DuplicatedServiceNameException;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class ServicesContainer
 {

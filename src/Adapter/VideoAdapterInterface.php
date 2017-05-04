@@ -5,7 +5,7 @@
  * Date: 29/08/2015
  * Time: 14:15.
  */
-namespace MichaelQuattrochi\Adapter;
+namespace Coalmarch\Adapter;
 
 interface VideoAdapterInterface
 {

@@ -5,9 +5,9 @@
  * Date: 31/08/2015
  * Time: 21:07.
  */
-namespace MichaelQuattrochi\Container\Factory;
+namespace Coalmarch\Container\Factory;
 
-use MichaelQuattrochi\Container\ServicesContainer;
+use Coalmarch\Container\ServicesContainer;
 
 class ServicesContainerFactory
 {

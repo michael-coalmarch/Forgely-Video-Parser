@@ -6,13 +6,13 @@
  * Time: 17:27
  */
 
-namespace MichaelQuattrochi\Test\Adapter;
+namespace Coalmarch\Test\Adapter;
 
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Adapter\Vimeo\VimeoServiceAdapter;
-use MichaelQuattrochi\Matcher\VideoServiceMatcher;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
+use Coalmarch\Adapter\Vimeo\VimeoServiceAdapter;
+use Coalmarch\Matcher\VideoServiceMatcher;
+use Coalmarch\Exception\ServiceNotAvailableException;
 
 class VimeoServiceAdapterTest extends PHPUnit_Framework_TestCase
 {
@@ -87,7 +87,7 @@ class VimeoServiceAdapterTest extends PHPUnit_Framework_TestCase
     public function testThrowsExceptionOnRequestThumbnailWithAnInvalidSize($url)
     {
         $vimeoVideo = $this->getMockingObject($url);
-        $this->setExpectedException('\\MichaelQuattrochi\\Exception\\InvalidThumbnailSizeException');
+        $this->setExpectedException('\\Coalmarch\\Exception\\InvalidThumbnailSizeException');
         $vimeoVideo->getThumbnail('This Size does not exists :)');
     }
 

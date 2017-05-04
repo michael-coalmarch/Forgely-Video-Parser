@@ -6,13 +6,13 @@
  * Time: 18:55
  */
 
-namespace MichaelQuattrochi\Test\Adapter;
+namespace Coalmarch\Test\Adapter;
 
 use PHPUnit_Framework_TestCase;
-use MichaelQuattrochi\Adapter\Facebook\FacebookServiceAdapter;
-use MichaelQuattrochi\Exception\ServiceNotAvailableException;
-use MichaelQuattrochi\Matcher\VideoServiceMatcher;
-use MichaelQuattrochi\Renderer\DefaultRenderer;
+use Coalmarch\Adapter\Facebook\FacebookServiceAdapter;
+use Coalmarch\Exception\ServiceNotAvailableException;
+use Coalmarch\Matcher\VideoServiceMatcher;
+use Coalmarch\Renderer\DefaultRenderer;
 
 class AbstractServiceAdapterTest extends PHPUnit_Framework_TestCase
 {

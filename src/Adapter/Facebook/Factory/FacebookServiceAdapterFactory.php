@@ -5,12 +5,12 @@
  * Date: 02/09/2015
  * Time: 22:41.
  */
-namespace MichaelQuattrochi\Adapter\Facebook\Factory;
+namespace Coalmarch\Adapter\Facebook\Factory;
 
-use MichaelQuattrochi\Adapter\Facebook\FacebookServiceAdapter;
-use MichaelQuattrochi\Adapter\CallableServiceAdapterFactoryInterface;
-use MichaelQuattrochi\Adapter\VideoAdapterInterface;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\Facebook\FacebookServiceAdapter;
+use Coalmarch\Adapter\CallableServiceAdapterFactoryInterface;
+use Coalmarch\Adapter\VideoAdapterInterface;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class FacebookServiceAdapterFactory implements CallableServiceAdapterFactoryInterface
 {

@@ -5,9 +5,9 @@
  * Date: 30/08/2015
  * Time: 01:09.
  */
-namespace MichaelQuattrochi\Renderer\Factory;
+namespace Coalmarch\Renderer\Factory;
 
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 interface RendererFactoryInterface
 {

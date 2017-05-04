@@ -5,10 +5,10 @@
  * Date: 29/08/2015
  * Time: 14:57.
  */
-namespace MichaelQuattrochi\Adapter;
+namespace Coalmarch\Adapter;
 
-use MichaelQuattrochi\Adapter\VideoAdapterInterface;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\VideoAdapterInterface;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 interface CallableServiceAdapterFactoryInterface
 {

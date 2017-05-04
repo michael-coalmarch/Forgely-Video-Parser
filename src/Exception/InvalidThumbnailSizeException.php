@@ -5,7 +5,7 @@
  * Date: 29/08/2015
  * Time: 20:17.
  */
-namespace MichaelQuattrochi\Exception;
+namespace Coalmarch\Exception;
 
 use Exception;
 

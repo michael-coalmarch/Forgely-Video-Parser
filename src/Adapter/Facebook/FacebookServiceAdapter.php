@@ -5,12 +5,12 @@
  * Date: 02/09/2015
  * Time: 22:42.
  */
-namespace MichaelQuattrochi\Adapter\Facebook;
+namespace Coalmarch\Adapter\Facebook;
 
-use MichaelQuattrochi\Adapter\AbstractServiceAdapter;
-use MichaelQuattrochi\Exception\InvalidThumbnailSizeException;
-use MichaelQuattrochi\Exception\ThumbnailSizeNotAvailable;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\AbstractServiceAdapter;
+use Coalmarch\Exception\InvalidThumbnailSizeException;
+use Coalmarch\Exception\ThumbnailSizeNotAvailable;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class FacebookServiceAdapter extends AbstractServiceAdapter
 {

@@ -5,11 +5,11 @@
  * Date: 30/08/2015
  * Time: 14:38.
  */
-namespace MichaelQuattrochi\Adapter\Dailymotion;
+namespace Coalmarch\Adapter\Dailymotion;
 
-use MichaelQuattrochi\Adapter\AbstractServiceAdapter;
-use MichaelQuattrochi\Exception\InvalidThumbnailSizeException;
-use MichaelQuattrochi\Renderer\EmbedRendererInterface;
+use Coalmarch\Adapter\AbstractServiceAdapter;
+use Coalmarch\Exception\InvalidThumbnailSizeException;
+use Coalmarch\Renderer\EmbedRendererInterface;
 
 class DailymotionServiceAdapter extends AbstractServiceAdapter
 {
